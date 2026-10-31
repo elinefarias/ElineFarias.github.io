@@ -115,8 +115,27 @@ button { font: inherit; color: inherit; cursor: pointer; }
   justify-content: space-between;
   gap: 16px;
 }
-.logo { font-weight: 700; font-size: 1.25rem; letter-spacing: -0.03em; }
-.logo span { color: var(--accent); }
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
 
 .nav { display: flex; gap: 28px; }
 .nav a { color: var(--muted); font-size: 0.95rem; font-weight: 500; transition: color 0.15s; }
@@ -167,8 +186,16 @@ button { font: inherit; color: inherit; cursor: pointer; }
 @media (max-width: 760px) {
   .burger { display: block; }
   .nav {
+    /* Explicit height: when the header gets backdrop-filter on scroll, it
+       becomes the containing block of this fixed menu, so a bottom inset
+       would collapse it to zero height. */
     position: fixed;
-    inset: var(--header-h) 0 0 0;
+    top: var(--header-h);
+    left: 0;
+    right: 0;
+    height: calc(100vh - var(--header-h));
+    height: calc(100dvh - var(--header-h));
+    overflow-y: auto;
     flex-direction: column;
     gap: 0;
     padding: 16px clamp(16px, 4vw, 32px);

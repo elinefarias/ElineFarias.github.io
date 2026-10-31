@@ -107,8 +107,8 @@ function Header({ t, lang, setLang, toggleTheme, menuOpen, setMenuOpen }) {
   return (
     <header className={`header ${scrolled ? 'is-scrolled' : ''}`}>
       <div className="container header-inner">
-        <a href="#top" className="logo" onClick={() => setMenuOpen(false)}>
-          eline<span>.</span>
+        <a href="#top" className="logo" aria-label="Eline Farias — início" onClick={() => setMenuOpen(false)}>
+          <span className="logo-mark" aria-hidden="true">EF</span>
         </a>
 
         <nav className={`nav ${menuOpen ? 'is-open' : ''}`} aria-label="Main">
