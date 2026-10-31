@@ -36,12 +36,16 @@ export const ui = {
   aboutTitle: { pt: 'Sobre mim', en: 'About me' },
   about: [
     {
-      pt: 'Sou Engenheira de Computação pela Universidade Federal do Ceará e mestranda em Engenharia Elétrica e de Computação na mesma instituição. Trabalho com Python na construção de APIs, pipelines ETL, agentes de IA baseados em LLMs e sistemas orientados a dados.',
-      en: "I'm a Computer Engineer from the Federal University of Ceará (UFC) and a master's student in Electrical and Computer Engineering at the same university. I work with Python building APIs, ETL pipelines, LLM-based AI agents and data-driven systems.",
+      pt: 'Sou Engenheira de Computação pela Universidade Federal do Ceará (UFC) e mestranda em Engenharia Elétrica e de Computação na mesma universidade. Desenvolvo sistemas back-end e soluções orientadas a dados. Em Python, construo APIs com FastAPI, pipelines de ETL e agentes de IA baseados em LLMs. Também trabalho com PHP no desenvolvimento e na manutenção de aplicações web.',
+      en: "I'm a Computer Engineer from the Federal University of Ceará (UFC) and a master's student in Electrical and Computer Engineering at the same university. I build back-end systems and data-driven solutions. In Python, I develop APIs with FastAPI, ETL pipelines and LLM-based AI agents. I also work with PHP, developing and maintaining web applications.",
     },
     {
-      pt: 'Hoje atuo no desenvolvimento de agentes de IA com LangChain e RAG, e na pesquisa em Deep Learning para classificação de sinais sismo-vulcânicos, com foco em interpretabilidade (XAI).',
-      en: 'Today I develop AI agents with LangChain and RAG, and research Deep Learning for classifying seismo-volcanic signals, with a focus on interpretability (XAI).',
+      pt: 'Atualmente desenvolvo agentes de IA com LangChain e RAG (Retrieval-Augmented Generation). No mestrado, pesquiso Deep Learning aplicado à classificação de sinais sismo-vulcânicos, com foco em interpretabilidade dos modelos (XAI).',
+      en: "I currently build AI agents with LangChain and RAG (Retrieval-Augmented Generation). In my master's research, I apply Deep Learning to classify seismo-volcanic signals, with a focus on model interpretability (XAI).",
+    },
+    {
+      pt: 'Gosto de transformar dados em soluções úteis, unindo engenharia de software sólida e inteligência artificial.',
+      en: 'I enjoy turning data into useful solutions, combining solid software engineering with artificial intelligence.',
     },
   ],
   stats: [
